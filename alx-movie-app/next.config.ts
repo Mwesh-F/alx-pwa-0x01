@@ -1,8 +1,9 @@
 import withPWAInit from "@ducanh2912/next-pwa";
 
 /** @type {import('next').NextConfig} */
+
 const withPWA = withPWAInit({
-  dest: 'public'  // Where service-worker and manifest will be generated
+  dest: 'public'
 })
 
 const nextConfig = {
@@ -14,4 +15,4 @@ const nextConfig = {
 
 export default withPWA({
   ...nextConfig
-});
+})
